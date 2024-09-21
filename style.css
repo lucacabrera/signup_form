@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "NorseB";
+  src: url("C:\Users\Luca\Downloads\norse-2.ttf");
+}
+
+
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw; 
+  height: 100vh; 
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row; 
+  margin: 0;
+}
+
+.photo {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.photo img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.photolabel {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  left: 0;
+  width: 33%;
+  margin-top: 200px;
+  font-family: NorseB;
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center;
+  
+}
+
+.main {
+  flex-basis: 67%;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh; 
+}
+
+.title {
+  flex-basis: 15%;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 15px;
+  width: 90vh;
+}
+
+.signupform {
+  display: flex;
+  margin: 0;
+  flex-basis: 85%;
+}
+
+.mainform {
+  margin: 0;
+  background-color: #ffffff;
+  padding: 30px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.inputPair {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 50%;
+  margin: 0.3rem 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 0.5rem 0.9rem;
+}
+
+input:focus {
+  border: blue;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  font-size: 13px;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.end {
+  margin: 0;
+  padding: 35px 80px;
+}
+
+.end button {
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: #596d48;
+  padding: 15px 35px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.end p {
+  padding-top: 10px;
+}
+
+.plink {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
+}
